@@ -29,3 +29,16 @@ to your webpack (eject or use any package to extend the config).
 
 - styled-components
 - css-modules
+
+## Integrating framer-motion and styled-components
+
+You can create a styled component off of a motion component in this way:
+
+```javascript
+import { motion } from 'framer-motion'
+import styled from 'styled-components'
+
+const AnimatedTitle = styled(motion.h1)`
+  /** Your styles here **/
+`
+```
