@@ -13,7 +13,7 @@ Here's the
 The latest version of framer motion uses .mjs extension files, which webpack 4
 doesn't support.
 
-\*\* Looks like it's supported in the latest webpack 4 version, but if your
+\*\* Looks like it's supported in the latest webpack 4 version, but if you're
 using an older one, it won't be supported.
 
 You can downgrade to framer-motion 4 or add this
