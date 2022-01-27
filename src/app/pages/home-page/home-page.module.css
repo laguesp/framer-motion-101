@@ -1,0 +1,78 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+  width: 100%;
+}
+
+.wrapper > * {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+}
+
+.wrapper > .header {
+  align-items: flex-start;
+}
+
+.wrapper > .footer {
+  align-items: flex-end;
+}
+
+.wrapper > .main {
+  flex: 1;
+}
+
+.slider {
+  height: 100%;
+  position: relative;
+}
+
+.slider > .backgroundColor {
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.slider > .characterImage {
+  display: block;
+  height: 50vh;
+  min-height: 250px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateX(50%) translateY(-50%);
+  will-change: right;
+  z-index: 0;
+}
+
+.slider > .characterName {
+  cursor: pointer;
+  font-size: 3.5rem;
+  left: 0;
+  position: absolute;
+  text-transform: uppercase;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  z-index: 1;
+}
+
+.slider > .characterName > .word {
+  display: block;
+}
+
+.slideCount {
+  position: relative;
+}
+
+.slideCount > .currentSlide {
+  left: -0.8rem;
+  position: absolute;
+  text-align: right;
+  top: 0;
+}

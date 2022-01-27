@@ -1,0 +1,50 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+  width: 100%;
+}
+
+.wrapper > * {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+}
+
+.wrapper > .header {
+  align-items: flex-start;
+}
+
+.wrapper > .footer {
+  align-items: flex-end;
+}
+
+.wrapper > .main {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+
+.randomQuote > .text {
+  font-size: 3rem;
+  word-break: break-word;
+  text-align: center;
+}
+
+.randomQuote > .backgroundColor {
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.navigateBack,
+.getAnotherQuote {
+  cursor: pointer;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
