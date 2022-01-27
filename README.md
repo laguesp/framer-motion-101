@@ -13,6 +13,9 @@ Here's the
 The latest version of framer motion uses .mjs extension files, which webpack 4
 doesn't support.
 
+\*\* Looks like it's supported in the latest webpack 4 version, but if your
+using an older one, it won't be supported.
+
 You can downgrade to framer-motion 4 or add this
 [config rule](https://github.com/formatjs/formatjs/issues/1395#issuecomment-518823361)
 to your webpack (eject or use any package to extend the config).
